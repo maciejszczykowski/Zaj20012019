@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jQuery</title>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<style>
+#box{
+    width: 100px;
+    height: 100px;
+    background: yellowgreen;
+    margin-top: 15px;
+    position: relative;
+}
+</style>
+  <script>
+    
+      $(document).ready(function(){
+      $("button").click(function(){
+        $("#box").animate({  
+            top: "+=50px",
+            left: "+=50px",
+            width: "+=50px",
+            height: "+=50px",  //co klikniecie wykonaja sie te rzeczy
+
+        })
+      });
+      
+  });
+  </script>
+
+</head>
+<body>
+        <button>Start</button>
+        <div id="box"></div>   
+    
+</body>
+</html>
