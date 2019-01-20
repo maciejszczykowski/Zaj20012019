@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jQuery</title>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <style>
+        span {
+         display:none;
+         }
+    </style>
+  <script>
+    
+      $(document).ready(function(){
+      $("input").focus(function(){
+        // $(this).next("span").show().fadeOut(); //next (po input) czyli span (bo nastepuje po inpucie) ma sie pokazac i schowac
+        $(this).css("borderColor", "red"); //po kliknieciu zmieni kolor 
+      });
+
+      $("input").blur(function(){
+        $(this).css("borderColor", ""); //potem blur i bez koloru
+    });
+  });
+  </script>
+
+</head>
+<body>
+     <form action="">
+             <label>Nazwa użytkownika: <input type="text"><span>Klikasz</span></label> <br>
+             <label>Hasło użytkownika: <input type="password"><span>Klikasz</span></label> <br>
+              <input type="submit" value="Zaloguj się">
+     </form>
+</body>
+</html>

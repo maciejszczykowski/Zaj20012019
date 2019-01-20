@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jQuery</title>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+  <style>
+  p {
+      padding: 20px;
+      font: 20px sans-serif;
+      background: orange;
+  }
+  </style>
+  <script>
+    
+      $(document).ready(function(){
+      $(window).resize(function(){
+        $("p").text("Szerokosc okna: " + $(window).width() + ", wysokość" + $(window).height());
+      });
+    //   po rozciagnieciu okna text zmieni sie na dane powyzej
+      
+  });
+  </script>
+
+</head>
+<body>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem soluta natus quo voluptates rerum ad alias voluptatum ratione, laudantium rem debitis unde ex voluptatibus, earum quasi sequi dignissimos. Veniam, sapiente.</p>
+    
+</body>
+</html>

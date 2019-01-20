@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jQuery</title>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+  <script>
+    
+      $(document).ready(function(){
+          //parzyste zmienia czyli odd, even czyli nieparzyste
+      $("tr:odd").css("background", "yellow");
+      $("tr:even").css("background", "orange");
+      $("p:first").css("background", "lightblue");
+      $("p:last").css("background", "red"); //ostatni p
+      $("p:nth-child(3)").css("background", "blue"); 
+      
+  });
+  </script>
+
+</head>
+<body>
+    <table border="10">
+        <thead>
+            <tr>
+                <th>LP</th>
+                <th>Imie</th>
+                <th>Nazwisko</th>
+            </tr>
+        </thead>
+<tbody>
+    <tr>
+        <td>1</td>
+        <td>Jan</td>
+        <td>Kowslaki</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Tomasz</td>
+        <td>Kowslaki</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Jan</td>
+        <td>Nowak</td>
+    </tr>
+</tbody>
+    </table>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt magni aperiam in, modi blanditiis eligendi cum commodi quam ex minima, obcaecati, necessitatibus harum possimus sapiente nemo earum facilis et natus.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt magni aperiam in, modi blanditiis eligendi cum commodi quam ex minima, obcaecati, necessitatibus harum possimus sapiente nemo earum facilis et natus.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt magni aperiam in, modi blanditiis eligendi cum commodi quam ex minima, obcaecati, necessitatibus harum possimus sapiente nemo earum facilis et natus.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt magni aperiam in, modi blanditiis eligendi cum commodi quam ex minima, obcaecati, necessitatibus harum possimus sapiente nemo earum facilis et natus.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt magni aperiam in, modi blanditiis eligendi cum commodi quam ex minima, obcaecati, necessitatibus harum possimus sapiente nemo earum facilis et natus.</p>
+   
+    <form action="">
+        <label>Nazwa użytkownika: <input type="text"></label> <br>
+        <label>Hasło użytkownika: <input type="password"></label> <br>
+        <input type="submit" value="Zaloguj się">
+    </form>
+</body>
+</html>
