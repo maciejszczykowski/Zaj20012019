@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jQuery</title>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+  <script>
+    
+      $(document).ready(function(){
+      $("#all").click(function(){
+        var str = $("p").text();
+        alert(str);
+      });
+      $("#first").click(function(){
+        var str = $("p:first").text();
+        alert(str);
+      });
+
+      $("#new").click(function(){
+         $("p").text("Ala ma kota");
+    });
+
+    $("#html").click(function(){
+        var str = $("#box").html();
+        alert(str);
+      });
+
+      $("#nowe").click(function(){
+         $("#box").text("Ala ma kota2");  
+        });
+  });
+  </script>
+
+</head>
+<body>
+    <button id="all">Wszystkie</button>
+    <button id="first">Pierwszy</button>
+    <button id="new">Nowy tekst</button>
+    <button id="html">HTML</button>
+    <button id="nowe">Nowe</button>
+
+<div id="box">
+    <p>Akapit 1 </p>
+    <p>Akapit 2 </p>
+    <p>Akapit 3 </p>
+</div>
+</body>
+</html>

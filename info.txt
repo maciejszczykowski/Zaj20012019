@@ -1,0 +1,22 @@
+1. jquery podlinkowujemy. wstawimy do JS albo CDN. 
+CDN czyli w momencie odpalania strony ktos ciagnie to z najblizszego serwera:
+https://code.jquery.com/
+... minified bo mniej wazy:
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+2.
+ <script>
+  $(document).ready()
+  </script>
+
+ mozna ja skrocic, zmodyfikowc, ale to to samo co document ready: 
+
+$(function(){
+    
+  })
+
+3.
